@@ -1,0 +1,63 @@
+Product Name,Category,Average Price (₹)
+Rice (Plain),Grains & Flours,40
+Basmati Rice,Grains & Flours,80
+Sona Masoori Rice,Grains & Flours,60
+Wheat Flour (Atta),Grains & Flours,35
+Rice Flour,Grains & Flours,30
+Gram Flour (Besan),Grains & Flours,40
+Toor Dal,Pulses & Lentils,100
+Moong Dal,Pulses & Lentils,110
+Chana Dal,Pulses & Lentils,80
+Masoor Dal,Pulses & Lentils,90
+Urad Dal,Pulses & Lentils,90
+Rajma (Kidney Beans),Pulses & Lentils,120
+Kabuli Chana (Chickpeas),Pulses & Lentils,90
+Turmeric Powder,Spices & Condiments,100
+Red Chili Powder,Spices & Condiments,200
+Coriander Powder,Spices & Condiments,100
+Cumin Seeds,Spices & Condiments,300
+Mustard Seeds,Spices & Condiments,90
+Garam Masala,Spices & Condiments,270
+Asafoetida (Hing),Spices & Condiments,1100
+Cardamom,Spices & Condiments,1620
+Cloves,Spices & Condiments,1230
+Fenugreek Seeds,Spices & Condiments,100
+Refined Oil,Oils & Ghee,160
+Mustard Oil,Oils & Ghee,190
+Coconut Oil,Oils & Ghee,240
+Groundnut Oil,Oils & Ghee,160
+Sunflower Oil,Oils & Ghee,240
+Ghee,Oils & Ghee,575
+Milk,Dairy Products,75
+Yogurt (Dahi),Dairy Products,40
+Paneer,Dairy Products,240
+Butter,Dairy Products,90
+Potatoes,Vegetables,22
+Onions,Vegetables,28
+Tomatoes,Vegetables,60
+Green Chilies,Vegetables,60
+Okra (Bhindi),Vegetables,40
+Eggplant (Brinjal),Vegetables,50
+Spinach (Palak),Vegetables,40
+Bitter Gourd (Karela),Vegetables,30
+Bananas,Fruits,49
+Apples,Fruits,120
+Oranges,Fruits,180
+Mangoes,Fruits,200
+Pomegranates,Fruits,80
+Almonds,Dry Fruits & Nuts,800
+Cashew Nuts,Dry Fruits & Nuts,1100
+Raisins,Dry Fruits & Nuts,820
+Pistachios,Dry Fruits & Nuts,1100
+Dates,Dry Fruits & Nuts,240
+Biscuits,Packaged Foods,18
+Noodles,Packaged Foods,25
+Pasta,Packaged Foods,25
+Breakfast Cereals,Packaged Foods,120
+Snacks (Namkeen),Packaged Foods,50
+Tea,Beverages,50
+Coffee,Beverages,50
+Fruit Juices,Beverages,50
+Soft Drinks,Beverages,80
+Bathing Soap,Personal Care,40
+Shampoo,Personal Care,100

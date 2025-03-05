@@ -10,9 +10,17 @@ def generate_uuid():
 class Users(db.Model):
     __tablename__ = 'users'
     user_id = db.Column(db.String(36), primary_key=True, default=generate_uuid, unique=True, nullable=False)
-    username = db.Column(db.String(100), unique=False, nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
+    passwordHash = db.Column(db.String(255), nullable=False)
     created_at = db.Column(db.TIMESTAMP, default=datetime.utcnow)
+
+class UserProfile(db.Model):
+    profileId = db.Column(db.String(36), primary_key=True, unique=True, nullable=False, default=generate_uuid)
+    userId = db.Column(db.String(36), db.ForeignKey('users.user_id'), nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    address = db.Column(db.String(500), nullable=False)
+    phoneNumber = db.Column(db.String(20), unique=True)
+    updatedAt = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 class Order(db.Model):
     __tablename__ = 'orders'
@@ -20,10 +28,12 @@ class Order(db.Model):
     user_id = db.Column(db.String(36), db.ForeignKey('users.user_id', ondelete='CASCADE'), nullable=False)
     total_price = db.Column(db.Numeric(10,2), nullable=False)
     shipping_address = db.Column(db.Text, nullable=False)
+    delivery_date = db.Column(db.String(36), nullable=False)
 
 class OrderItem(db.Model):
     __tablename__ = 'order_items'
     order_item_id = db.Column(db.String(36), primary_key=True, default=generate_uuid, unique=True, nullable=False)
     order_id = db.Column(db.String(36), db.ForeignKey('orders.order_id', ondelete='CASCADE'), nullable=False)
+    item = db.Column(db.String(36), nullable=False)
     quantity = db.Column(db.Integer, nullable=False)
     price_at_purchase = db.Column(db.Numeric(10,2), nullable=False)
